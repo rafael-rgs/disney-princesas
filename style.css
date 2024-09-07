@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'princess_and_the_frog';
-    src: url('fonts/princess_and_the_frog.ttf') format('woff2'),
+    src: url('princess_and_the_frog.ttf') format('woff2'),
   }
 
 /* Estiliza o corpo da página */
@@ -30,7 +30,6 @@ h1 {
     font-style: normal;
     font-size: 4rem; /* Tamanho da fonte */
     color: #ffffff;
-    /*color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
     margin-top: 0;
