@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/waltograph-disney" type="text/css"/>
+    
+    <title>Disney Princesas</title>
+</head>
+<body>
+    <header>
+        <h2>Disney</h2>
+        <h1>Princesas</h1>
+    </header>
+    <main>
+        <section>
+        <input type="text" placeholder="Digite o nome da princesa ou filme" id="campo-pesquisa">
+        <button id="btnPesquisar" onclick="pesquisar()">Pesquisar</button>
+
+        <script>
+            const input = document.getElementById('campo-pesquisa');
+            const botao = document.getElementById('btnPesquisar');
+    
+            input.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    botao.click();
+                }
+            });
+        </script>
+    </section>
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados - Desenvolvido por: Rafael Gomes - <a href="mailto:seu_email@exemplo.com" style="color: white;">Entre em contato</a></p>
+      </footer>
+      <script src="dados.js"></script>
+      <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
